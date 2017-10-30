@@ -1,0 +1,48 @@
+﻿<section class="mainbar">
+    <section class="matter">
+        <div class="container">
+            <div class="row">
+                <div class="widget wviolet">
+                    <div data-cc-widget-header title="{{vm.title}}"></div>
+                    <div class="widget-content user">
+                        <div class="col-md-12">
+                            <h3 class="col-md-6 pull-left">Grid 1</h3>
+                            <input class="col-md-6 pull-right" placeholder="Search" ng-model="vm.searchTerm" id="searchText" />
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>Column 1</th>
+                                                    <th>Column 2</th>
+                                                    <th>Column 3</th>
+                                                    <th>Column 4</th>
+                                                    <th>Column 5</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr ng-repeat="data in vm.grid1Data | filter:vm.searchTerm">
+                                                    <td>{{data.Column1}}</td>
+                                                    <td>{{data.Column2}}</td>
+                                                    <td>{{data.Column3}}</td>
+                                                    <td>{{data.Column4}}</td>
+                                                    <td>{{data.Column5}}</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div><!--end of .table-responsive-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget-foot">
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>

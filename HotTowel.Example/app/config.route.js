@@ -49,7 +49,16 @@
                         content: '<i class="fa fa-lock"></i> Monitor'
                     }
                 }
-            }
+            },
+             {
+                 url: '/emailDelivery',
+                 config: {
+                     templateUrl: 'app/monitor/email/email.html',
+                     controller: 'email',
+                     controllerAs: 'vm',
+                     title: 'Email Delivery'
+                 }
+             },
 
         ];
     }
