@@ -625,7 +625,7 @@ a {
   border: none;
   line-height: 28px;
   border-bottom: 1px solid #23282e;
-  margin-left: 0px;
+  margin-left: 10px;
 }
 .nav-side-menu ul .sub-menu li:hover,
 .nav-side-menu li .sub-menu li:hover {
@@ -695,4 +695,12 @@ a {
   }
 }
 
+.grid {
+  width: 1000px;
+  height: 250px;
+}
 
+li.padding {
+    padding-left: 30px; 
+
+}

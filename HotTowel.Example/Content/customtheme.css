@@ -780,12 +780,13 @@ form {
 /* Main */
 
 .mainbar {
-    position: relative;
+    position: absolute;
     margin-left: 230px;
     margin-right: 0;
     width: auto;
     background: #fff;
     min-height: 900px;
+    z-index:-1;
 }
 
     .mainbar .container {

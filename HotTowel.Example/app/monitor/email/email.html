@@ -1,39 +1,56 @@
-﻿<section class="mainbar">
+﻿
+
+<section class="mainbar page-meta">
     <section class="matter">
         <div class="container">
+
+            <ul class="nav nav-pills">
+                <li class="active"><a href="#">Pending Emails</a></li>
+                <li><a href="#/monitor/emailDelivery" >Sent Emails</a></li>
+                <li><a href="#/monitor">Error Emails</a></li>
+                
+            </ul>
+
             <div class="row">
-                <div class="widget wviolet">
-                    <div data-cc-widget-header title="{{vm.title}}"></div>
+                <div class="widget worange">
+                    <div data-cc-widget-header title="Pending Emails"></div>
                     <div class="widget-content user">
-                        <div class="col-md-12">
-                            <h3 class="col-md-6 pull-left">Grid 1</h3>
-                            <input class="col-md-6 pull-right" placeholder="Search" ng-model="vm.searchTerm" id="searchText" />
-                        </div>
+                        <!--<div class="col-md-12">
+                            <!--<h3 class="col-md-6 pull-left">Grid 1</h3>-
+                            <input class="col-md-6 pull-right" placeholder="Search" ng-model="vm.searchTerm1" id="searchText" />
+                        </div>-->
+                        <br />
                         <div class="container">
                             <div class="row">
                                 <div class="col-xs-12">
-                                    <div class="table-responsive">
+                                    <!--<div class="table-responsive">
                                         <table class="table table-bordered table-hover">
                                             <thead>
                                                 <tr>
-                                                    <th>Column 1</th>
-                                                    <th>Column 2</th>
-                                                    <th>Column 3</th>
-                                                    <th>Column 4</th>
-                                                    <th>Column 5</th>
+                                                    <th>ID</th>
+                                                    <th>Application</th>
+                                                    <th>Event Description</th>
+                                                    <th>Event Account Description</th>
+                                                    <th>Email</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr ng-repeat="data in vm.grid1Data | filter:vm.searchTerm">
-                                                    <td>{{data.Column1}}</td>
-                                                    <td>{{data.Column2}}</td>
-                                                    <td>{{data.Column3}}</td>
-                                                    <td>{{data.Column4}}</td>
-                                                    <td>{{data.Column5}}</td>
+                                                <tr ng-repeat="data in vm.grid1Data | filter:vm.searchTerm1">
+                                                    <td>{{data.emailID}}</td>
+                                                    <td>{{data.Application}}</td>
+                                                    <td>{{data.eventDescription}}</td>
+                                                    <td>{{data.emailAccountDescription}}</td>
+                                                    <td>ABC</td>
                                                 </tr>
                                             </tbody>
                                         </table>
-                                    </div><!--end of .table-responsive-->
+                                    </div>-->
+                                    <!--end of .table-responsive-->
+                                  
+                                       <div ui-grid="{data: gridOptions.grid1Data}" class="grid"></div>
+                                   
+                                       
+                                    
                                 </div>
                             </div>
                         </div>
@@ -43,6 +60,10 @@
                     </div>
                 </div>
             </div>
+
+
+            
+
         </div>
     </section>
 </section>
